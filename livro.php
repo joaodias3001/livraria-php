@@ -63,7 +63,7 @@
 				mysqli_close($conn);
 			?></center>
 
-			ola mundo
+			ola mundo 2
 			
 		</div>
 	</div>

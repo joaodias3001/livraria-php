@@ -62,6 +62,8 @@
 				echo "</table><br/>  <a href='livro.php'>Voltar ao ínicio</a>";// fecha a tabela e uma hiperligação para voltar ao inicio do site
 				mysqli_close($conn);
 			?></center>
+
+			ola mundo
 			
 		</div>
 	</div>

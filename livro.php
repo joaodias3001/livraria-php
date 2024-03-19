@@ -43,7 +43,7 @@
 				$conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die ("Não foi possivel estabelecer conexão");
 				
 				// Cria a tabela
-				echo "<table border='1' style='text-align:center;'><tr><th>Capa do Livro</th><th>Titulo</th><<th>Autor</th></tr>";
+				echo "<table border='1' style='text-align:center;'><tr><th>Capa do Livro</th><th>Titulo</th><th>Autor</th></tr>";
 				// Liga a tabela na base de dados
 				$sql = 'SELECT* FROM livro';
 				//Seleciona a base de dados

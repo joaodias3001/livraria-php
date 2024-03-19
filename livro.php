@@ -59,6 +59,7 @@
 					echo "<td>".$row['titulo']."</td>";
 					echo "<td>".$row['autor']."</td>";
 					echo "<td><a href='deletar_livro.php?titulo=" . $row['titulo'] . "'>Deletar livro</a></td>";
+					echo "<td><a href='editar.php?titulo=" . $row['titulo'] . "&autor=". $row['autor'] . "&img_capa=" . $row['img_capa'] . "'>Editar livro</a></td>";
 					echo "</tr>";
 				}
 				echo "</table><br/>  <a href='livro.php'>Voltar ao ínicio</a>";// fecha a tabela e uma hiperligação para voltar ao inicio do site

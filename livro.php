@@ -55,7 +55,7 @@
 
 				while($row = mysqli_fetch_array($retval)){// vai buscar ha base de dados os dados nela guardada e poem os na tabela
 					//echo "<tr><td>".$row['img_capa']."</td>";	
-					echo "<tr><td>" . "<img class='filme' id='capa' src =". $row['img_capa'] ."></td>";
+					echo "<tr><td>" . "<img class='filme' id='capa' src = images/". $row['img_capa'] ."></td>";
 					echo "<td>".$row['titulo']."</td>";
 					echo "<td>".$row['autor']."</td>";
 					echo "<td><a href='deletar_livro.php?titulo=" . $row['titulo'] . "'>Deletar livro</a></td>";

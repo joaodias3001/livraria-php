@@ -31,7 +31,9 @@
 				</div>
 			</div>
 			<div id="banner">
-				<div class="image"><a href="#"><img src="books.jpg" width="1000" height="262" alt="" /></a></div>
+				<div class="image">
+					<a href="#"><img src="books.jpg" width="1000" height="262" alt="" /></a>
+				</div>
 			</div><center>
 		<?php
 		// Ligar há base de dados

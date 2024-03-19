@@ -13,7 +13,7 @@ if (isset($_GET['titulo']) && isset($_GET['autor']) && isset($_GET['img_capa']))
     $autor = $_GET['autor'];
     $img_capa = $_GET['img_capa'];
 ?>
-<form action="atualizar_livro.php" method="get">
+<form action="atualizar_livro.php" method="post">
     <input type="hidden" name="titulo_antigo" value="<?php echo htmlspecialchars($titulo); ?>">
     <label for="titulo">Título:</label>
     <input type="text" id="titulo" name="novo_titulo" value="<?php echo ($titulo); ?>"><br><br>

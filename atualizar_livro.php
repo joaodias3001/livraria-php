@@ -1,6 +1,6 @@
 <?php
 
-    if (isset($_GET['titulo_antigo']) && isset($_GET['novo_titulo']) && isset($_GET['novo_autor']) && isset($_GET['nova_img_capa'])) {
+    if (isset($_POST['titulo_antigo']) && isset($_POST['novo_titulo']) && isset($_POST['novo_autor']) && isset($_POST['nova_img_capa'])) {
         // Conecta ao banco de dados
         $dbhost = 'localhost';
         $dbuser = 'root';
@@ -14,10 +14,10 @@
         mysqli_select_db($conn, 'Livraria');
 
         // Obtém os dados do formulário
-        $titulo_antigo = $_GET['titulo_antigo'];
-        $novo_titulo = $_GET['novo_titulo'];
-        $novo_autor = $_GET['novo_autor'];
-        $nova_img_capa = $_GET['nova_img_capa'];
+        $titulo_antigo = $_POST['titulo_antigo'];
+        $novo_titulo = $_POST['novo_titulo'];
+        $novo_autor = $_POST['novo_autor'];
+        $nova_img_capa = $_POST['nova_img_capa'];
 
         // Prepara a consulta SQL para atualizar os dados do livro
         $sql = "UPDATE livro SET titulo='$novo_titulo', autor='$novo_autor', img_capa='$nova_img_capa' WHERE titulo='$titulo_antigo'";
